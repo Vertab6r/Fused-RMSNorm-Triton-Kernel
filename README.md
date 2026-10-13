@@ -1,4 +1,4 @@
-# Fast RMSNorm on the GPU (Triton)
+# Fast RMSNorm on a GPU with Triton
 
 RMSNorm is a small step that runs many times inside every large language model (Llama, for example). This repo has a GPU kernel written in [Triton](https://triton-lang.org) that does the whole step in one pass, and a benchmark showing it is faster than the straightforward PyTorch version. (TESTED IN GOOGLE COLAB) 
 
