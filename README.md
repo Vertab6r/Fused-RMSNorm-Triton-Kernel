@@ -22,7 +22,6 @@ Tested on a Tesla T4 (Google Colab), fp16, 4096 rows. Time per call, lower is be
 
 - It is **3.6-5x faster** than the straightforward PyTorch version.
 - It is **about the same speed as `torch.compile`**, which fuses the steps automatically. The small differences are within normal run-to-run noise.
-- It is also faster than PyTorch's built-in `F.rms_norm` at larger sizes (1.3-1.4x at 4096 and 8192). Full numbers are in [`results.txt`](results.txt).
 - In the right-hand plot, my kernel reaches about 71% of the T4's maximum memory bandwidth. That plot uses the same byte count for every method, so the bandwidth for the straightforward version is an estimate.
 
 ## Files
